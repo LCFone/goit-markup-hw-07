@@ -466,9 +466,9 @@ button:focus {
 /* ,,,,,header,,,,, */
 
 /* `````HERO````` */
+
 .hero-section {
-  margin: 0 auto;
-  padding: 188px 0;
+  padding: 112px 0;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -482,19 +482,43 @@ button:focus {
   background-color: #2e2f42;
 }
 
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    padding: 188px 0;
+  }
+}
+
 .title-hero {
-  max-width: 496px;
-  max-height: 120px;
+  max-width: 320px;
+  max-height: 80px;
   word-wrap: break-word;
   margin: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700px;
-  line-height: 1.07;
+  /* https://prnt.sc/HQVRsYOfpu6z */
+  line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-hero {
+    max-width: 496px;
+    max-height: 120px;
+    margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .title-hero {
+    margin-bottom: 48px;
+  }
 }
 
 .button-hero {
@@ -632,7 +656,7 @@ button:focus {
 /* ,,,,,opportunities,,,,,*/
 
 /* `````TEAM````` */
-/* .team-section {
+.team-section {
   padding: 120px 0;
   background-color: #f4f4fd;
 }
@@ -698,9 +722,7 @@ button:focus {
 
 .socials-icons {
   fill: #f4f4fd;
-} */
-
-/* ,,,,,team,,,,, */
+}
 
 /* `````CUSTOMERS````` */
 
