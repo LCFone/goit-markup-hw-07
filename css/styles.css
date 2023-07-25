@@ -656,25 +656,49 @@ button:focus {
 /* ,,,,,opportunities,,,,,*/
 
 /* `````TEAM````` */
+
 .team-section {
-  padding: 120px 0;
+  padding: 96px 0;
   background-color: #f4f4fd;
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-section {
+    padding: 120px 0;
+  }
 }
 
 .team-title {
   margin-bottom: 72px;
+  text-align: center;
+}
+/* @media only screen and (max-width: 767px) {
+  .team-list {
+    flex-direction: column;
+  }
+} */
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
 }
 
-.team-list {
-  display: flex;
-  gap: 24px;
+@media only screen and (min-width: 768px) {
+  .team-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+  }
 }
 
-.team-item {
-  width: calc((100% - 72px) / 4);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+@media only screen and (min-width: 1158px) {
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 .worker {
@@ -819,19 +843,43 @@ button:focus {
 /* ,,,,,customers,,,,, */
 
 /* `````PORTFOLIO````` */
+.portfolio-section {
+  padding: 48px;
+}
 
-/* .portfolio-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
-} */
+@media only screen and (min-width: 1158px) {
+  .portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+}
 
 /* `````BUTTONS PORTFOLIO````` */
-/* .list-button {
+.list-button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .list-button {
+    width: 428px;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .list-button {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .list-button {
+    margin-bottom: 72px;
+  }
 }
 
 .filter-button {
@@ -889,8 +937,11 @@ button:focus {
   row-gap: 48px;
 }
 
-.portfolio-inform {
+.item-portfolio {
+  display: flex;
+}
 
+.portfolio-inform {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -925,7 +976,7 @@ button:focus {
 .portfolio-link:hover .overlay-portfolio-txt,
 .portfolio-link:focus .overlay-portfolio-txt {
   transform: translateY(0);
-} */
+}
 
 /* `````FOOTER````` */
 .footer {
@@ -1224,7 +1275,7 @@ button:focus {
 }
 /* `````BACKDROP-MODAL-FORM`````` */
 
-/* .modal-form-title {
+.modal-form-title {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -1322,7 +1373,6 @@ button:focus {
   fill: transparent;
 }
 
-
 .input-checkbox:checked + .modal-checkbox span {
   background-color: #404bbf;
   fill: #f4f4fd;
@@ -1371,4 +1421,4 @@ button:focus {
 .modal-form-btn:focus {
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} */
+}
