@@ -523,32 +523,42 @@ button:focus {
   padding-top: 96px;
 }
 
-/* .goals-item:not(:last-child) {
-  margin-bottom: 72px;
-} */
-
-/* @media only screen and (min-width: 768px), (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .goals-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
   }
+}
 
-
-} */
-
-/* .goals-item {
+@media screen and (min-width: 768px) {
+  .goals-item {
     flex-basis: calc((100% - 24px) / 2);
-  } */
+  }
+}
+
+.goals-item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 1158px) {
+  .goals-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .goals-descriprions {
+    text-align: center;
+  }
+}
 
 @media only screen and (max-width: 1157px) {
   .goals-descriprions {
-    text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-
     margin-bottom: 8px;
   }
 }
@@ -581,10 +591,6 @@ button:focus {
   .goals-list {
     display: flex;
     gap: 24px;
-  }
-
-  .goals-item {
-    width: calc((100% - 3 * 24px) / 4);
   }
 
   .goals-icon {
