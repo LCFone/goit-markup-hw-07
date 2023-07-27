@@ -463,7 +463,6 @@ button:focus {
     display: none;
   }
 }
-/* ,,,,,header,,,,, */
 
 /* `````HERO````` */
 
@@ -722,17 +721,17 @@ button:focus {
   margin-bottom: 72px;
   text-align: center;
 }
-/* @media only screen and (max-width: 767px) {
-  .team-list {
-    flex-direction: column;
-  }
-} */
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 96px;
+  justify-content: center;
+}
 
 @media only screen and (min-width: 768px) {
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
     row-gap: 72px;
   }
 }
@@ -962,11 +961,6 @@ button:focus {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-portfolio {
-  width: calc((100% - 48px) / 3);
-  position: relative;
-}
-
 .list-portfolio .portfolio-link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -987,8 +981,27 @@ button:focus {
   row-gap: 48px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .list-portfolio {
+    row-gap: 72px;
+  }
+}
+
 .item-portfolio {
   display: flex;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .item-portfolio {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .item-portfolio {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
 
 .portfolio-inform {
