@@ -1,8 +1,3 @@
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* .team-container * {outline: 1px solid tomato} * */
-/* div.goals-icon+svg.goals-icon[width="16" hight="16"]>use[href="./images/icons.svg#"]
- */
-
 /* `````ROOT````` */
 :root {
   --card-set-gap: 24px;
@@ -1067,7 +1062,7 @@ button:focus {
   .footer-container {
     display: flex;
     align-items: baseline;
-    margin-left: 156px;
+    /* margin-left: 156px; */
   }
 }
 
