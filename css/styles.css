@@ -458,7 +458,7 @@ button:focus {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/_mob_h@1x.webp);
+    url(../images/hero/mob_h@1x.webp);
   /* max-width: 1440px; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -473,7 +473,7 @@ button:focus {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/_mob_h@2x.webp);
+      url(../images/hero/mob_h@2x.webp);
   }
 }
 
@@ -483,7 +483,7 @@ button:focus {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/_tab_h@1x.webp);
+      url(../images/hero/tab_h@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -494,7 +494,7 @@ button:focus {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/_tab_h@2x.webp);
+        url(../images/hero/tab_h@2x.webp);
     }
   }
 }
@@ -517,7 +517,7 @@ button:focus {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/_desk_h@2x.webp);
+        url(../images/hero/desk_h@2x.webp);
     }
   }
 }
@@ -963,7 +963,7 @@ button:focus {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   column-gap: 24px;
   row-gap: 48px;
 }
