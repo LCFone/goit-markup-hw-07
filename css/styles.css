@@ -334,10 +334,13 @@ button:focus {
   }
 
   .mob-menu-container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding-left: 40px;
     padding-top: 80px;
     padding-bottom: 40px;
+    height: 100%;
   }
 
   .mob-menu-close {
@@ -360,9 +363,11 @@ button:focus {
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .menu-list {
+  /* .menu-list {
+    margin-bottom: auto;
+    margin-bottom: calc(268px - 100vw * 0.2);
     margin-bottom: 26.4vh;
-  }
+  } */
 
   .menu-item:not(:last-child) {
     margin-bottom: 40px;
@@ -376,6 +381,7 @@ button:focus {
   }
 
   .menu-address {
+    margin-top: auto;
     font-style: normal;
   }
 
@@ -460,6 +466,7 @@ button:focus {
     ),
     url(../images/hero/mob_h@1x.webp);
   /* max-width: 1440px; */
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -502,11 +509,15 @@ button:focus {
 @media only screen and (min-width: 1158px) {
   .hero-section {
     padding: 188px 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/desk_h@1x.webp);
+    /* background-size: 1440px; */
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -518,6 +529,7 @@ button:focus {
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero/desk_h@2x.webp);
+      /* background-size: 1440px; */
     }
   }
 }
@@ -721,12 +733,11 @@ button:focus {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .team-item {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-  }
+.team-item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 @media only screen and (min-width: 1158px) {
