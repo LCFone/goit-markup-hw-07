@@ -973,7 +973,7 @@ button:focus {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -981,6 +981,7 @@ button:focus {
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .list-portfolio {
     row-gap: 72px;
+    justify-content: flex-start;
   }
 }
 
