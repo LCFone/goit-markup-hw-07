@@ -910,7 +910,7 @@ button:focus {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .list-button {
-    width: 428px;
+    max-width: 428px;
     justify-content: flex-start;
   }
 }
